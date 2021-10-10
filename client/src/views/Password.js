@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, Form, Input, Button } from "reactstrap";
 import { Error } from "components";
 import axios from "axios";
-import logo from 'assets/logo.png';
+import Logo from 'assets/jagulogo.jpg'; 
 
 
 class Password extends React.Component {
@@ -30,7 +30,7 @@ class Password extends React.Component {
         return (
             <Card className="auth col-lg-3 col-sm-6">
                 <Form onSubmit={this.onSubmit}>
-                    <img src={logo} alt="" width="200"  />
+                    <img src={Logo} alt="" className="logo" />
                     <h5 className="mb-4">Password changing</h5>
                     <Error error={this.state.error} />
                     <Input type="password"  value={this.state.password} name="password" onChange={this.onChange} placeholder="Password" required />
