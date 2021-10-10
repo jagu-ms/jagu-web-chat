@@ -141,9 +141,9 @@ class Chat extends React.Component {
 
     render() {
         const {connected, contact, contacts, messages, user } = this.state;
-        if(!connected){
+        /* if(!connected || !contacts || !messages){
             return <Spinner id="loader" color="success" />
-        }
+        } */
 
         return (
             <Row className="h-100 sections-direction">
